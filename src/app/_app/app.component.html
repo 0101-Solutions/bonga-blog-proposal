@@ -1,6 +1,19 @@
-<h1>Who are She Code Kenya?</h1>
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quas magnam
-  vel quisquam optio laborum corporis nulla quam obcaecati expedita mollitia nam
-  quae modi repellendus. Atque, sint! Animi, eius quidem.
-</p>
+<h1>She Code Kenya.</h1>
+<hr />
+
+<h2>Subject: {{ title }}.</h2>
+
+<h3>{{ blogObject.headline }}?</h3>
+<p>{{ blogObject.description }}.</p>
+
+<!-- Angular magic -->
+<div *ngIf="linksArray.length">
+  <!-- Here we first print out a true <p> to show that indeed there array has similar links. -->
+  <!-- Then we print out the elements in the linksArray -->
+  <strong>Related Posts:</strong>
+  <ul *ngFor="let relatedLinks of linksArray">
+    <li>
+      <a href="">{{ relatedLinks }}</a>
+    </li>
+  </ul>
+</div>
