@@ -11,5 +11,22 @@ export class NetworkingComponent implements OnInit {
 
   ngOnInit(): void {
   }
+      
+  title: string = 'System of Systems (SoS) Management: A Network Approach.';
+
+  // Create an object.
+  blogObject = {
+    headline: "What is the ISO Network Management Approach",
+    description: `
+      The ISO model defines five conceptual areas for managing networks: performance, configuration, accounting, fault, and security. This model is both a standard and primary means for understanding the major functions of network management. The Boardman-Sauser characteristics of autonomy, belonging, connectivity, diversity, and emergence are used to recognize a SoS. These characteristics represent the fundamental "building blocks " of SoS management.
+    `
+  }
+
+  linksArray = [
+    "Dynamic Reasoning Architecture For Network Management.",
+    "OSI Model",
+    "Variable Length Subnet Mask."
+  ];
+
 
 }

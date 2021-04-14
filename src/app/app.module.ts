@@ -6,6 +6,8 @@ import { AppComponent } from './_app/app.component';
 import { AiComponent } from './ai/ai.component';
 import { NetworkingComponent } from './networking/networking.component';
 import { CybersecurityComponent } from './cybersecurity/cybersecurity.component';
+import { SoftwareengineeringComponent } from './softwareengineering/softwareengineering.component';
+import { FormComponent } from './form/form.component';
 // We moved the first app into a component of is own.
 
 // This is the app.js {NODEJS} of your angular file. It is where the application is rendered.
@@ -16,7 +18,9 @@ import { CybersecurityComponent } from './cybersecurity/cybersecurity.component'
     AppComponent,
     AiComponent,
     NetworkingComponent,
-    CybersecurityComponent
+    CybersecurityComponent,
+    SoftwareengineeringComponent,
+    FormComponent
   ],
   // This is where our application will bring in the imports necessary for our app to run.
   imports: [
