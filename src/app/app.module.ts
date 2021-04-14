@@ -10,6 +10,7 @@ import { SoftwareengineeringComponent } from './softwareengineering/softwareengi
 import { FormComponent } from './form/form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AwesomifyPipe } from './awesomify.pipe';
+import { SortalphabetsPipe } from './sortalphabets.pipe';
 // We moved the first app into a component of is own.
 
 // This is the app.js {NODEJS} of your angular file. It is where the application is rendered.
@@ -23,7 +24,8 @@ import { AwesomifyPipe } from './awesomify.pipe';
     CybersecurityComponent,
     SoftwareengineeringComponent,
     FormComponent,
-    AwesomifyPipe
+    AwesomifyPipe,
+    SortalphabetsPipe
   ],
   // This is where our application will bring in the imports necessary for our app to run.
   imports: [

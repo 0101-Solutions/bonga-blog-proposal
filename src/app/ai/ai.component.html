@@ -8,7 +8,7 @@
   <!-- Here we first print out a true <p> to show that indeed there array has similar links. -->
   <!-- Then we print out the elements in the linksArray -->
   <strong>Related Posts:</strong>
-  <ul *ngFor="let relatedLinks of linksArray">
+  <ul *ngFor="let relatedLinks of linksArray | sortalphabets: 'asc'">
     <li>
       <a href="">{{ relatedLinks }}</a>
     </li>
