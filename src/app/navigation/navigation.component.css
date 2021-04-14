@@ -14,6 +14,6 @@ a {
     opacity: .7;
 }
 
-a {
+a:hover {
     opacity: .1;
 }

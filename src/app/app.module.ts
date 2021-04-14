@@ -14,6 +14,7 @@ import { SortalphabetsPipe } from './sortalphabets.pipe';
 import { MagnifyDirective } from './magnify.directive';
 import { NavigationComponent } from './navigation/navigation.component';
 import { SubjectComponent } from './subject/subject.component';
+import { HomeComponent } from './home/home.component';
 // We moved the first app into a component of is own.
 
 // This is the app.js {NODEJS} of your angular file. It is where the application is rendered.
@@ -31,7 +32,8 @@ import { SubjectComponent } from './subject/subject.component';
     SortalphabetsPipe,
     MagnifyDirective,
     NavigationComponent,
-    SubjectComponent
+    SubjectComponent,
+    HomeComponent
   ],
   // This is where our application will bring in the imports necessary for our app to run.
   imports: [

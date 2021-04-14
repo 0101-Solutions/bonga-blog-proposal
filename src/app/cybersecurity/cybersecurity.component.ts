@@ -14,8 +14,7 @@ export class CybersecurityComponent implements OnInit {
       
   title: string = 'Hacking';
 
-  // Create an object.
-  blogObject = {
+  blogData = {
     headline: "What is Hacking",
     description: `
     Hacking is satisfying one’s curiosity.
@@ -25,13 +24,12 @@ export class CybersecurityComponent implements OnInit {
     Hacking is pushing technology to its limits and making technology more resilient through testing, tinkering, and exploration.
     
     Hacking is a mindset, a culture, a spirit, and the execution of creative problem-solving.
-  `
+  `,
+    relatedLinks: [
+      "Defending Linux From Attacks.",
+      "Security-as-a-service.",
+      "Security Awareness Training."
+    ]
   }
-
-  linksArray = [
-    "Defending Linux From Attacks.",
-    "Security-as-a-service.",
-    "Security Awareness Training."
-  ];
 
 }
