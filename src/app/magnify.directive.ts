@@ -29,8 +29,13 @@ export class MagnifyDirective {
       this.defaultFontSize + 3,
       this.defaultFontSize + 6,
       this.defaultFontSize + 9,
+      this.defaultFontSize + 12,
+      this.defaultFontSize + 15,
+      this.defaultFontSize + 18,
+      this.defaultFontSize + 21,
     ]
 
+    // TODO: Fix disappearing zoom in fn
     let newFontSize = fontSizeArray[++this.counter % fontSizeArray.length]
 
     elementRef.nativeElement.style.fontSize = String(newFontSize + "px")
