@@ -2,17 +2,21 @@
   <!-- Here we append styles to configure our app template, we also add our form globally. -->
 
   <div style="width: 64%">
-    <h2>Subject: {{ title }}.</h2>
+    <h2>Subject: {{ blogData.subject }}.</h2>
 
     <h3>{{ blogData.headline }}?</h3>
     <p appMagnify>{{ blogData.description }}.</p>
 
     <!-- Angular magic -->
-    <div *ngIf="linksArray.length">
+    <div *ngIf="blogData.relatedLinks.length">
       <!-- Here we first print out a true <p> to show that indeed there array has similar links. -->
       <!-- Then we print out the elements in the linksArray -->
       <strong>Related Posts:</strong>
-      <ul *ngFor="let relatedLinks of linksArray | sortalphabets: 'asc'">
+      <ul
+        *ngFor="
+          let relatedLinks of blogData.relatedLinks | sortalphabets: 'asc'
+        "
+      >
         <!-- Ng For is an example of a strictural directive -->
         <li>
           <a href="">{{ relatedLinks }}</a>

@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   // We create a private function to be called only within the class not outside this component.
   // It return nothing hence we say void.
   private callMe(): void {
-    console.log('Then our private method is called.');
+      
     
   }
 
