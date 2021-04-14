@@ -12,12 +12,14 @@ export class AiComponent implements OnInit {
   ngOnInit(): void {
   }
     
-  title: string = 'She Code Ng-Webinar';
+  title: string = 'Women In AI';
 
   // Create an object.
   blogObject = {
-    headline: "What is Typescript",
-    description: `TypeScript is a language that is a superset of JavaScript: JS syntax is therefore legal TS. Syntax refers to the way we write text to form a program. For example, this code has a syntax error because it’s missing a ):`
+    headline: "What is AI",
+    description: `
+      In computer science, artificial intelligence (AI), sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans. Leading AI textbooks define the field as the study of 'intelligent agents': any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals. Colloquially, the term 'artificial intelligence' is often used to describe machines (or computers) that mimic 'cognitive' functions that humans associate with the human mind, such as 'learning' and 'problem solving'.
+    `
   }
 
   linksArray = [

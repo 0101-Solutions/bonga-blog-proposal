@@ -6,6 +6,10 @@ body {
     color: #202020;
 }
 
+input, button {
+    font-family: inherit;
+}
+
 h1, h2, h3 {
     font-family: 'Passion One', cursive;
     font-weight: normal;
