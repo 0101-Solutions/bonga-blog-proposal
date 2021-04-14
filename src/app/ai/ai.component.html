@@ -1,0 +1,16 @@
+<h2>Subject: {{ title }}.</h2>
+
+<h3>{{ blogObject.headline }}?</h3>
+<p>{{ blogObject.description }}.</p>
+
+<!-- Angular magic -->
+<div *ngIf="linksArray.length">
+  <!-- Here we first print out a true <p> to show that indeed there array has similar links. -->
+  <!-- Then we print out the elements in the linksArray -->
+  <strong>Related Posts:</strong>
+  <ul *ngFor="let relatedLinks of linksArray">
+    <li>
+      <a href="">{{ relatedLinks }}</a>
+    </li>
+  </ul>
+</div>
