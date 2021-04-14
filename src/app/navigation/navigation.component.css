@@ -1,0 +1,19 @@
+ul { padding: 0; }
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 62px;
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .1s;
+    opacity: .7;
+}
+
+a {
+    opacity: .1;
+}

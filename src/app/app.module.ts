@@ -12,6 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AwesomifyPipe } from './awesomify.pipe';
 import { SortalphabetsPipe } from './sortalphabets.pipe';
 import { MagnifyDirective } from './magnify.directive';
+import { NavigationComponent } from './navigation/navigation.component';
+import { SubjectComponent } from './subject/subject.component';
 // We moved the first app into a component of is own.
 
 // This is the app.js {NODEJS} of your angular file. It is where the application is rendered.
@@ -27,7 +29,9 @@ import { MagnifyDirective } from './magnify.directive';
     FormComponent,
     AwesomifyPipe,
     SortalphabetsPipe,
-    MagnifyDirective
+    MagnifyDirective,
+    NavigationComponent,
+    SubjectComponent
   ],
   // This is where our application will bring in the imports necessary for our app to run.
   imports: [
