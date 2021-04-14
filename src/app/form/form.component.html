@@ -1,12 +1,13 @@
 <form (ngSubmit)="createUser()" autocomplete="off">
   <h3>Make an account to gain full access!</h3>
   <div>
+    <!-- We use the Banana Boat to bind data, referenced with what you want that data to represent. -->
     <label>Email</label>
-    <input type="email" />
+    <input type="email" name="password" [(ngModel)]="userData.email" />
   </div>
   <div>
     <label>Password</label>
-    <input type="password" />
+    <input type="password" name="password" [(ngModel)]="userData.password" />
   </div>
   <input type="submit" value="Subscribe" />
 </form>
