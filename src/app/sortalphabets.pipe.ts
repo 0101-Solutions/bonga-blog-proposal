@@ -11,10 +11,6 @@ export class SortalphabetsPipe implements PipeTransform {
     let sorted = array.sort();
 
     if(order === 'desc') { sorted.reverse(); }
-
-    console.log(array);
-
-    console.log(order);
     
 
     return sorted;

@@ -1,7 +1,7 @@
 <h2>Subject: {{ title }}.</h2>
 
 <h3>{{ blogObject.headline }}?</h3>
-<p>{{ blogObject.description }}.</p>
+<p appMagnify>{{ blogObject.description }}.</p>
 
 <!-- Angular magic -->
 <div *ngIf="linksArray.length">
@@ -9,6 +9,7 @@
   <!-- Then we print out the elements in the linksArray -->
   <strong>Related Posts:</strong>
   <ul *ngFor="let relatedLinks of linksArray | sortalphabets: 'asc'">
+    <!-- Ng For is an example of a strictural directive -->
     <li>
       <a href="">{{ relatedLinks }}</a>
     </li>
